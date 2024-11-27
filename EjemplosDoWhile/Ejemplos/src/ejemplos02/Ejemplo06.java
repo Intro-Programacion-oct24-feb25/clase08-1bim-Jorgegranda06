@@ -42,10 +42,10 @@ public class Ejemplo06 {
         do {
             operacion = tabla * contador;
             
-            cadenaFinal = String.format("%d x %d = %d\n", tabla, contador, 
-                    operacion);
+            cadenaFinal = String.format("%s%d x %d = %d\n", cadenaFinal,
+                    tabla, contador, operacion);
             contador = contador + 1;
         } while (contador <= limite);
-        System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
+        System.out.printf("Tabla de Multiplicar\n%s\n", cadenaFinal);
     }
 }
